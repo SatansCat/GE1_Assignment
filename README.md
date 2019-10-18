@@ -20,11 +20,10 @@ Unity audio visualizer:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=5pmoP1ZOoNs
 " target="_blank"><img src="http://img.youtube.com/vi/5pmoP1ZOoNs/0.jpg" 
-alt="Data Rush video" width="240" height="180" border="10" /></a>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5pmoP1ZOoNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-https://www.youtube.com/watch?v=5pmoP1ZOoNs&list=PL3POsQzaCw53p2tA6AWf7_AWgplskR0Vo&fbclid=IwAR06ha73Pd9EDDzgTrS_P4tbu1rlEvYyHH8betLszJ-FgWG2ySCQSmbqBaI
+alt="Visualizer" width="240" height="180" border="10" /></a>
 
 Inspiration for bullet patterns:
-https://www.youtube.com/watch?v=8LxIeRE0slc
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8LxIeRE0slc
+" target="_blank"><img src="http://img.youtube.com/vi/8LxIeRE0slc/0.jpg" 
+alt="Bullet Patterns" width="240" height="180" border="10" /></a>
