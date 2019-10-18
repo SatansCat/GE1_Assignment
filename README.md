@@ -5,14 +5,14 @@ I plan on creating a top down "bullet hell" style game with procedurally generat
 
 
 ### To do list:
-[ ] Character movement
+- [ ] Character movement
 - [ ] Room spawning
-- [] Enemy spawning
-- [] Enemy AI
-- [] Room feature design
-- [] Syncing the Rooms to Music
-- [] Implementing scoring
-- [] Implementing lives
+- [ ] Enemy spawning
+- [ ] Enemy AI
+- [ ] Room feature design
+- [ ] Syncing the Rooms to Music
+- [ ] Implementing scoring
+- [ ] Implementing lives
 
 
 ### References:
