@@ -17,6 +17,8 @@ I plan on creating a top down "bullet hell" style game with procedurally generat
 
 ### References:
 Unity audio visualizer:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5pmoP1ZOoNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 https://www.youtube.com/watch?v=5pmoP1ZOoNs&list=PL3POsQzaCw53p2tA6AWf7_AWgplskR0Vo&fbclid=IwAR06ha73Pd9EDDzgTrS_P4tbu1rlEvYyHH8betLszJ-FgWG2ySCQSmbqBaI
 
 Inspiration for bullet patterns:
