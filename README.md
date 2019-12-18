@@ -5,8 +5,8 @@ I plan on creating a top down "bullet hell" style game with procedurally generat
 
 
 ### To do list:
-- [ ] Character movement
-- [ ] Room spawning
+- [X] Character movement
+- [X] Room spawning
 - [ ] Enemy spawning
 - [ ] Enemy AI
 - [ ] Room feature design
