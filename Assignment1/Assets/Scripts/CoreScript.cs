@@ -11,10 +11,16 @@ public class CoreScript : MonoBehaviour
     public GameObject MapPrefab;
     public GameObject PathPrefab;
 
+    public GameObject Player;
+
+    public AudioSource[] Songs;
+
     // Start is called before the first frame update
     void Start()
     {
         Maps.Add(StartingMap);
+        StartingMap.GetComponent<MapManipulator>().chosenSong.Play();
+        StartingMap.GetComponent<MapManipulator>().isIn = true;
         Paths.Add(StartingPath);
     }
 
@@ -33,6 +39,9 @@ public class CoreScript : MonoBehaviour
         GameObject newPath = Instantiate(PathPrefab, newPathPos, Maps[0].transform.rotation);
 
         newMap.GetComponent<MapManipulator>().Core = this;
+        int i = Random.Range(0, 3);
+        newMap.GetComponent<MapManipulator>().chosenSong = Songs[i];
+        newMap.GetComponent<MapManipulator>().Player = Player;
         Maps.Add(newMap);
         Paths.Add(newPath);
     }

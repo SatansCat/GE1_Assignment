@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public string Target;
+
     private void Awake()
     {
         Invoke("RemoveBullet", 5f);
@@ -11,10 +13,18 @@ public class Bullet : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "Damagable")
+        if(collision.collider.tag == Target)
         {
-            ObjectHealth objectScript = collision.collider.GetComponent<ObjectHealth>();
-            objectScript.Health--;
+            if(Target == "Damagable")
+            {
+                ObjectHealth objectScript = collision.collider.GetComponent<ObjectHealth>();
+                objectScript.Health--;
+            }
+            else if (Target == "Player")
+            {
+                //Damage player
+            }
+            
         }
         Destroy(gameObject);
     }

@@ -7,10 +7,10 @@ I plan on creating a top down "bullet hell" style game with procedurally generat
 ### To do list:
 - [X] Character movement
 - [X] Room spawning
-- [ ] Enemy spawning
-- [ ] Enemy AI
+- [X] Enemy spawning
+- [X] Enemy AI
 - [ ] Room feature design
-- [ ] Syncing the Rooms to Music
+- [X] Syncing the Rooms to Music
 - [ ] Implementing scoring
 - [ ] Implementing lives
 
