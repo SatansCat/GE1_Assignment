@@ -11,6 +11,7 @@ public class MapManipulator : MonoBehaviour
     public GameObject doorOut;
     public GameObject[] Blockers;
     public GameObject[] Turrets;
+    public GameObject[] Stretchers;
 
     public AudioSource chosenSong; //Song chosen for map.
     public static int frameSize = 512;
@@ -50,7 +51,7 @@ public class MapManipulator : MonoBehaviour
         GetSpectrumAudioSource();
 
         //Effects for map
-        if (bands[1] <= .5f)
+        if (bands[1] <= .2f)
         {
             for(int i=0; i<Blockers.Length; i++)
             {
@@ -69,10 +70,17 @@ public class MapManipulator : MonoBehaviour
 
         if (bands[4] >= .2f)
         {
-
+            for (int i = 0; i < Turrets.Length; i++)
+            {
+                Turrets[i].GetComponent<TurretShooting>().Shoot();
+            }
         }
 
-        
+        for(int i = 0; i<Stretchers.Length; i++)
+        {
+            Stretchers[i].transform.localScale = new Vector3(.1f, bands[7 - i], 1);
+        }
+
         
         
         if(!chosenSong.isPlaying && doorOut.activeInHierarchy && isIn)
@@ -83,15 +91,21 @@ public class MapManipulator : MonoBehaviour
         }
         else
         {
-            foreach(GameObject enemy in Enemies)
+            if(Enemies.Count > 0)
             {
-                if(enemy.GetComponent<ObjectHealth>().Health <1)
+                
+                foreach (GameObject enemy in Enemies)
                 {
-                    Enemies.Remove(enemy);
-                    Destroy(enemy);
-                    //toKill--;
+                    if(enemy.GetComponent<ObjectHealth>().Health <1)
+                    {
+                        print("Reached: ");
+                        Enemies.Remove(enemy);
+                        Destroy(enemy);
+                        //toKill--;
+                    }
                 }
             }
+            
         }
     }
 
@@ -102,14 +116,13 @@ public class MapManipulator : MonoBehaviour
         
         while (true)
         {
-            if (bands[2] >= .5f)
+            if (bands[5] >= .3f)
             {
                 
                 Vector3 newpos = gameObject.transform.position + new Vector3(Random.Range(-7, 7), Random.Range(-7, 7), 0);
                 GameObject temp = Instantiate(EnemyPrefab, newpos, gameObject.transform.rotation, gameObject.transform);
                 temp.GetComponent<EnemyFollow>().Player = Player;
             
-                print("Reached: "+ temp);
                 Enemies.Add(temp);
                 yield return new WaitForSeconds(1.0f / SpawnRate);
             }

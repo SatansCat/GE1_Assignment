@@ -9,10 +9,10 @@ I plan on creating a top down "bullet hell" style game with procedurally generat
 - [X] Room spawning
 - [X] Enemy spawning
 - [X] Enemy AI
-- [ ] Room feature design
+- [X] Room feature design
 - [X] Syncing the Rooms to Music
-- [ ] Implementing scoring
-- [ ] Implementing lives
+- [X] Implementing scoring
+- [X] Implementing lives
 
 
 ### References:

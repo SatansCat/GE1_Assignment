@@ -2,21 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class TurretBullet : MonoBehaviour
 {
-    public string Target;
 
     private void Awake()
     {
         Invoke("RemoveBullet", 5f);
     }
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "Damagable")
+        if (collision.collider.tag == "Player")
         {
-            ObjectHealth objectScript = collision.collider.GetComponent<ObjectHealth>();
-            objectScript.Health--;
+            collision.collider.GetComponent<StatTracker>().Health--; //Damage Player
         }
         Destroy(gameObject);
     }

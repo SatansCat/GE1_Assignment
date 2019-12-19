@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 4495117267252928630}
   - component: {fileID: 9140941004644092866}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 9163650595720707479}
   - component: {fileID: 9163650595720707473}
   - component: {fileID: 9163650595720707474}
+  - component: {fileID: 1142523176072491291}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Damagable
@@ -229,3 +230,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.09
+--- !u!114 &1142523176072491291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9163650595720707477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad236a790a2d1842ada7225b1faf3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletForce: 20
+  firePoint: {fileID: 1868607475198026862}
+  bulletPrefab: {fileID: 283463318140775712, guid: 8bd7afc35c01da84f8b1db3f72f297b3,
+    type: 3}

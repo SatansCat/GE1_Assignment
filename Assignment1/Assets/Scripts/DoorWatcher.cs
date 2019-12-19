@@ -11,6 +11,8 @@ public class DoorWatcher : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Map.Entered();
+            other.GetComponent<StatTracker>().Score++;
+            //other.GetComponent<StatTracker>().Health++;
             gameObject.SetActive(false);
         }
     }

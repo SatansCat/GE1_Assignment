@@ -9,6 +9,7 @@ public class CoreScript : MonoBehaviour
     public GameObject StartingMap;
     public GameObject StartingPath;
     public GameObject MapPrefab;
+    public GameObject MapPrefab2;
     public GameObject PathPrefab;
 
     public GameObject Player;
@@ -32,8 +33,18 @@ public class CoreScript : MonoBehaviour
 
     public void NextMap()
     {
+        int random = Random.Range(0, 2);
+
         Vector3 newMapPos = Maps[0].transform.position + new Vector3(0, 34, 0);
-        GameObject newMap = Instantiate(MapPrefab, newMapPos, Maps[0].transform.rotation);
+        GameObject newMap;
+        if (random == 0)
+        {
+            newMap = Instantiate(MapPrefab, newMapPos, Maps[0].transform.rotation);
+        }
+        else
+        {
+            newMap = Instantiate(MapPrefab2, newMapPos, Maps[0].transform.rotation);
+        }
 
         Vector3 newPathPos = Maps[0].transform.position + new Vector3(0, 51, 0);
         GameObject newPath = Instantiate(PathPrefab, newPathPos, Maps[0].transform.rotation);

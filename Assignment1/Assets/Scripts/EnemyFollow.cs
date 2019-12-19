@@ -23,4 +23,12 @@ public class EnemyFollow : MonoBehaviour
         transform.Translate(1 * Time.deltaTime * speed, 0, 0);
         //position = Vector3.Lerp(gameObject.transform.position, Player.transform.position, Time.deltaTime);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Player")
+        {
+            collision.collider.GetComponent<StatTracker>().Health--;
+        }
+    }
 }
