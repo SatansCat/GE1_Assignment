@@ -1,4 +1,4 @@
-# GE1_Assignment
+# GE1_Assignment (Disco Dungeoneer)
 
 ### Proposal:
 I plan on creating a top down "bullet hell" style game with procedurally generated maps using tile sets or "rooms" linked to specific musical ques that you must pass by dispatching of all remaining enemies that will be procedurally spawned as each room progresses. I plan on implementing a life system to allow for some mistakes to be made before you're met with the inevitable Game Over screen. Extra lives will have a chance to be aquired in certain rooms up to a max value.
@@ -19,6 +19,11 @@ The feature I'm most proud of would have to be the mix of room tiling and proced
 - [X] Implementing scoring
 - [X] Implementing lives
 
+### Video Demo:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=EUEY7svhR7k
+" target="_blank"><img src="http://img.youtube.com/vi/EUEY7svhR7k/0.jpg" 
+alt="DiscoDungeoneer" width="240" height="180" border="10" /></a>
 
 ### References:
 Unity audio visualizer:
@@ -37,6 +42,6 @@ Movement scripts:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=LNLVOjbrQj4
 " target="_blank"><img src="http://img.youtube.com/vi/LNLVOjbrQj4/0.jpg" 
-alt="Bullet Patterns" width="240" height="180" border="10" /></a>
+alt="Movement" width="240" height="180" border="10" /></a>
 
 Music from Bensound.com
