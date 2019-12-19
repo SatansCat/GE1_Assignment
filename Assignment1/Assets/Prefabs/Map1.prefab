@@ -1346,6 +1346,7 @@ GameObject:
   - component: {fileID: 3900955849065357715}
   - component: {fileID: 3900955849065357717}
   - component: {fileID: 3900955849065357716}
+  - component: {fileID: 4897235572430851910}
   m_Layer: 0
   m_Name: DoorWatcher
   m_TagString: Untagged
@@ -1441,6 +1442,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.07512705}
   m_EdgeRadius: 0
+--- !u!114 &4897235572430851910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3900955849065357714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f6cb85b5ebcae54f93dafa930269efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Map: {fileID: 3900955848485047949}
 --- !u!1 &3900955849151384936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,7 +1790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3900955849815216039
 Transform:
   m_ObjectHideFlags: 0
